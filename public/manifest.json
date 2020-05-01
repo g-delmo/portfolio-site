@@ -1,0 +1,8 @@
+{
+  "short_name": "Delmo",
+  "name": "I am a young and passionate web developer from 🇩🇪 Germany working with the latest technologies to create beautiful and highly responsive websites.",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
