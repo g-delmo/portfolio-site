@@ -3,16 +3,27 @@ import {
   BrowserRouter as Router,
   Route,
   // Switch,
-  // Redirect,
+  Redirect,
 } from "react-router-dom";
 import Landing from "./pages/Landing";
+import Navbar from "./components/Navbar";
+import Projects from "./pages/Projects";
 
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div
+        className="App"
+        style={{
+          backgroundColor: "#050925",
+          minHeight: "100vh",
+          color: "white",
+        }}
+      >
         <Router>
+          <Navbar />
           <Route exact path="/" component={Landing} />
+          <Route exact path="/projects" component={Projects} />
         </Router>
       </div>
     );

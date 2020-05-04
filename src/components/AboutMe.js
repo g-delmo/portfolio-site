@@ -5,7 +5,7 @@ import reactIcon from "../assets/images/react-icon.svg";
 export default class AboutMe extends Component {
   render() {
     return (
-      <div className="about-me">
+      <div className="about-me" id="about">
         <div className="about-header">
           <img src={aboutIcon} alt="About Icon" className="about-icon" />
           <span className="about-header-text">About Me</span>

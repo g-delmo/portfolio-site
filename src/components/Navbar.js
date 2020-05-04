@@ -1,22 +1,28 @@
 import React from "react";
+import { Link, withRouter } from "react-router-dom";
+
+// ASSETS
 import "../assets/navbar.css";
 import delmologo from "../assets/images/delmo-logo.svg";
 import githubicon from "../assets/images/github.svg";
 import twittericon from "../assets/images/twitter.svg";
 
-export default class Navbar extends React.Component {
+class Navbar extends React.Component {
   render() {
+    let location = this.props.location.pathname;
     return (
       <div className="navbar">
         <div className="nav-left">
-          <img src={delmologo} alt="Delmo Logo" className="nav-logo" />
-          <a href="#about" className="nav-link">
+          <Link to="/">
+            <img src={delmologo} alt="Delmo Logo" className="nav-logo" />
+          </Link>
+          <a href={location === "/" ? "/#about" : "/"} className="nav-link">
             About Me
           </a>
-          <a href="#projects" className="nav-link">
+          <a href={location === "/" ? "/#projects" : "/"} className="nav-link">
             Projects
           </a>
-          <a href="#contact" className="nav-link">
+          <a href={location === "/" ? "/#contact" : "/"} className="nav-link">
             Contact
           </a>
         </div>
@@ -32,3 +38,5 @@ export default class Navbar extends React.Component {
     );
   }
 }
+
+export default withRouter(Navbar);
