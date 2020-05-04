@@ -2,7 +2,7 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 
 // ASSETS
-import "../assets/navbar.css";
+import "../assets/navbar.scss";
 import delmologo from "../assets/images/delmo-logo.svg";
 import githubicon from "../assets/images/github.svg";
 import twittericon from "../assets/images/twitter.svg";

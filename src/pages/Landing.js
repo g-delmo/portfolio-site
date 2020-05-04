@@ -1,6 +1,5 @@
 import React from "react";
-import "../assets/landing.css";
-import Navbar from "../components/Navbar";
+import "../assets/landing.scss";
 import IntroMessage from "../components/IntroMessage";
 import AboutMe from "../components/AboutMe";
 import Services from "../components/Services";

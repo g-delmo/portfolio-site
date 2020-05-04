@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Project from "../components/Project";
 
 // ASSETS
-import "../assets/projects.css";
+import "../assets/projects.scss";
 import hyperIcon from "../assets/images/hyper-icon.svg";
 import flipsIcon from "../assets/images/flips-icon.svg";
 
