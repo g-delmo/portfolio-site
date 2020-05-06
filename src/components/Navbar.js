@@ -27,7 +27,7 @@ class Navbar extends React.Component {
           </a>
         </div>
         <div className="nav-right">
-          <a href="https://github.com/" className="nav-icon-link">
+          <a href="https://github.com/g-delmo" className="nav-icon-link">
             <img src={githubicon} alt="GitHub Icon" className="nav-icon" />
           </a>
           <a href="https://twitter.com/SniperDelmo" className="nav-icon-link">
