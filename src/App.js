@@ -8,6 +8,7 @@ import {
 import Landing from "./pages/Landing";
 import Navbar from "./components/Navbar";
 import Projects from "./pages/Projects";
+import "./assets/fonts.scss";
 
 class App extends React.Component {
   render() {

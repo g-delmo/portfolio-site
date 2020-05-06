@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Tilt from "react-tilt";
 
 // ASSETS
 import twitterIcon from "../assets/images/twitter-white-icon.png";
@@ -6,7 +7,7 @@ import twitterIcon from "../assets/images/twitter-white-icon.png";
 export class Project extends Component {
   render() {
     return (
-      <div className="project-card">
+      <Tilt className="project-card" options={{ max: 25 }}>
         <img src={this.props.project.icon} className="project-icon" />
         <span className="project-title">{this.props.project.name}</span>
         <span className="project-description">
@@ -22,7 +23,7 @@ export class Project extends Component {
         <a href={this.props.project.siteLink} className="project-link">
           {this.props.project.siteLink ? "VISIT SITE" : "COMING SOON"}
         </a>
-      </div>
+      </Tilt>
     );
   }
 }

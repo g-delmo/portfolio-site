@@ -51,7 +51,6 @@ export default class Landing extends React.Component {
       color: "#f1a45d",
     },
   ];
-
   render() {
     return (
       <div className="landing-page">
